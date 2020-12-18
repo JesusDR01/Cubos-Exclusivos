@@ -558,5 +558,16 @@ html{
 	margin-top:30px;
 }
 
+.wrapperForm{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	justify-items:center;
+}
+#hidebutton{
+	bottom:426px;
+}
 }
 
