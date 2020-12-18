@@ -572,10 +572,10 @@ html{
 	width:100%;
 }
 .to-top{
-	width:12%;
+	max-width:12%;
 }
 #showbutton{
-	width:12%;
+	max-width:12%;
 }
 }
 
