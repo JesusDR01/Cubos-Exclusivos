@@ -503,6 +503,7 @@ flex-direction: column;
 
 iframe{
 	width:100%;
+	height: 150px;
 }
 #THEMASTERPIECECUBE{
 	font-size:40px;
@@ -547,7 +548,14 @@ left:166px;
 top:75px
 }
 html{
-	background-position: 49.5%;
+	background: url(../img/5.2.jpg) no-repeat center center fixed;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.TextContact{
+	margin-top:30px;
 }
 
 }
