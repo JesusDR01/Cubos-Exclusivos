@@ -568,6 +568,14 @@ html{
 }
 #hidebutton{
 	bottom:426px;
+	position:relative;
+	width:100%;
+}
+.to-top{
+	width:12%;
+}
+#showbutton{
+	width:12%;
 }
 }
 
