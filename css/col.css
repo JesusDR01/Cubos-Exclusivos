@@ -1,3 +1,15 @@
+section{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+ol{
+	width:100%;
+	display:flex;
+	flex-wrap: wrap;
+	padding:0;
+}
 .content {
 	position: absolute;
 	BOX-sizing: border-box;
@@ -15,7 +27,7 @@
 }
 
 .content>p {
-	font-size: 30px;
+	font-size: 25px;
 	margin-top: 10vh;
 	margin: 2vh;
 	padding: 3vh;
@@ -70,8 +82,8 @@ a:link {
 .content>a:after {
 	content: '';
 	position: absolute;
-	top: 87px;
-	left: 178px;
+	top: 83px;
+	left: 173px;
 	width: 10px;
 	height: 10px;
 	border-bottom: 2px solid #21ecff8f;
@@ -140,7 +152,6 @@ a:link {
 
 .MainBox {
 	Display: Flex;
-	flex-flow: row, nowrap;
 	justify-content: flex-start;
 	align-content: center;
 	align-items: center;
@@ -148,35 +159,41 @@ a:link {
 
 .BoxA {
 	Display: Flex;
-	flex-flow: row, wrap;
-	align-content: center;
-	align-items: center;
-	margin-top: -2%;
+	justify-content: space-between;
+	width:100%;
+
 }
 
 .BoxB {
 	Display: Flex;
-	flex-flow: row, wrap-reverse;
-	justify-content: flex-start;
-	align-content: center;
-	align-items: center;
-	margin-top: 2%;
+	width:100%;
+	justify-content: space-around;
 }
 
 .BoxC {
-	margin-left: 30vh;
+	background-image: url("../img/5.2.png");
+	width:320px;
+	height:320px;
 }
 
 .BoxD {
-	margin-left: 55vh;
+	background-image: url("../img/6.2.png");
+	width:310px;
+	height:320px;
 }
 
 .BoxE {
-	margin-left: 49vh;
+
+	background-image: url("../img/7.6.png");
+	width:310px;
+	height:320px;
 }
 
 .BoxF {
-	margin-left: 15vh;
+
+	background-image: url("../img/8.3.png");
+	width:310px;
+	height:320px;	
 }
 
 .textstyle {
@@ -184,21 +201,25 @@ a:link {
 	color: #ffffff;
 	font-weight: 100;
 }
-
+.TextContact > p{
+	margin:-10px;
+}
 .BackgroundText {
 	background-color: #d2d2d294;
+	width: 1200px;
 	box-shadow: 1px 1px 1px 10px #111010;
 	border-radius: 10px;
-	margin: 6vh 14.2vh 14.2vh 14.2vh;
-	padding: 9vh;
+	margin: 5vh 14.2vh 14.2vh 14.2vh;
+	padding: 6vh;
 }
 
 .finalbackground {
 	background-color: #d2d2d294;
 	box-shadow: 1px 1px 1px 10px #111010;
+	width: 1200px;
 	border-radius: 10px;
-	margin: 9vh 14.2vh 17vh 14.2vh;
-	padding: 9vh;
+	margin: 5vh 14.2vh 17vh 14.2vh;
+	padding: 6vh;
 }
 
 .EstiloTexto {
@@ -225,15 +246,10 @@ img {
 	object-fit: contain;
 }
 
-.conEspaciado {
-	line-height: 3vh;
-}
 
 html {
-	background: url(../img/5.2.jpg) no-repeat center center fixed;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background: url(../img/5.2.jpg) fixed;
+	background-position: 38%;
 }
 
 .fuente-oswald {
@@ -249,7 +265,8 @@ html {
 }
 
 .tituloTexto {
-	font-size: 60px;
+	font-size: 50px;
+	margin-bottom:20px;
 	text-shadow: 0 0 10px #FF0000, 0 0 10px #0000FF;
 	color: #fdee17;
 	font-weight: 100;
@@ -456,3 +473,82 @@ td {
 	font-family: "Raleway";
 	src: url("../fonts/Raleway.ttf");
 }
+
+@media screen and (max-width: 1000px){
+.BoxA, .BoxB,.BoxE, .BoxF, .BoxC,.BoxD{
+	display:block;
+	margin:0;
+}
+
+.mainBox{
+	display:flex;
+	align-content: center;
+	align-items:center;
+}
+ol{
+margin: 0;
+padding: 0;
+width:100%;
+display:flex;
+flex-direction: column;
+align-items:center;
+
+}
+.content{
+display:flex;
+align-items:center;
+justify-content: space-around;
+flex-direction: column;
+}
+
+iframe{
+	width:100%;
+}
+#THEMASTERPIECECUBE{
+	font-size:40px;
+}
+
+.finalbackground{
+	margin:0;
+	padding:10px;
+	width: 90%;
+}
+
+.BackgroundText{
+	margin:0;
+	padding:10px;
+	width:90%;
+}
+
+table{
+	table-layout:fixed;
+	width:100%;
+}
+
+table.EstiloTexto{
+	font-size:10px;
+}
+.Moretable{
+	padding-right: 0;
+}
+.content>p{
+	position:relative;
+	text-align:center;
+	font-size:25px;
+}
+
+.content>a{
+	position:relative;
+	margin:0;
+}
+
+.content>a:after{
+left:166px;
+top:75px
+}
+html{
+	background-position: 49.5%;
+}
+
+}
+
