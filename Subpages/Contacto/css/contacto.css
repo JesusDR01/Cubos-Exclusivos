@@ -145,6 +145,24 @@ font-size: 40px;
   .icon-4:hover {
     background: #d9266e;
   }
-  
+  @media screen and (max-width: 1024px){
+    body{
+      overflow:hidden;
+    }
+    .BackgroundText{
+      margin:30px;
+      padding:1em;
+    }
+    .wrapper{
+
+      display:flex;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 1500px;
+
+    }
+
+  } 
 
   
