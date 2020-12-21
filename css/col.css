@@ -572,7 +572,8 @@ iframe{
 }
 
 .BackgroundText{
-	margin:0;
+	margin-left:23px;
+	margin-right:8px;
 	padding:10px;
 	width:90%;
 }
