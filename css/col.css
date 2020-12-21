@@ -353,6 +353,7 @@ html {
 .main {
 	position: fixed;
 	bottom: 50px;
+	z-index: 2;
 }
 
 .box h1 {
