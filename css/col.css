@@ -481,7 +481,10 @@ td {
 	opacity: 1;
 	transition: 0.6s;
 }
-
+iframe{
+	border:15px solid rgb(8, 8, 8);
+	border-radius: 20px !important;
+}
 @font-face {
 	font-family: "Oswald";
 	src: url("../fonts/Oswald.ttf");
@@ -559,7 +562,8 @@ height: 168px;
 }
 
 iframe{
-	width:100%;
+
+	width:90%;
 }
 #THEMASTERPIECECUBE{
 	font-size:40px;
