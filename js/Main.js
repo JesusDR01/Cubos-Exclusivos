@@ -43,14 +43,18 @@ $(document).ready(function() {
         e.preventDefault(e);
     })
     
-    $(".flecha").click(function() {
-        $(this).fadeOut();
-        $(this).parent().css("display","none");
-        $(this).parent().parent().children(".content").toggleClass("active");
+    $(".toggle").click(function() {
+        $(this).css("display","none");
+        $(this).parent().children(".hide").children(".flecha").css("font-size","20px");
+        $(this).parent().children(".content").toggleClass("active");
+        $(this).parent().children(".hide").toggleClass("active");
+        
     })
     
-    $(".content").click(function() {
+    $(".hide").click(function() {
         this.classList.toggle("active");
+
+        $(this).parent().children(".content").toggleClass("active");
         $(this).parent().children(".toggle").css("display","flex");
         $(this).parent().children(".toggle").children(".flecha").fadeIn();
         
