@@ -284,7 +284,7 @@ html {
 	font-family: "Oswald", oswald;
 }
 
-#titulo {
+.titulo {
 	margin-top: 10px;
 }
 
@@ -363,7 +363,7 @@ html {
 }
 
 .box input[type="text"],
-.box textarea[type="text"],
+.box textarea[class="morepadding"],
 .box input[type="email"] {
 	background: none;
 	display: block;
@@ -379,7 +379,7 @@ html {
 }
 
 .box input[type="text"]:focus,
-.box textarea[type="text"]:focus,
+.box textarea[class="morepadding"]:focus,
 .box input[type="email"]:focus {
 	width: 280px;
 	border-color: #2ecc71;
