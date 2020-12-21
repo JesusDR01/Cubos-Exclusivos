@@ -624,6 +624,9 @@ top:59px
 	height: 100%;
 }
 
+.EstiloTexto{
+	font-size: 15px;
+}
 
 html{
 	background-position: 49.5%;
