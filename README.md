@@ -5,7 +5,7 @@ He subido mi página a internet:
 https://github.com/bules2/Cubos-Exclusivos 
 (código)
 
-bules.cubos.eu
+https://cubos.bules.eu/
 (página funcional)
 
 
