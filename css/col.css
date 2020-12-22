@@ -11,6 +11,7 @@ ol{
 	padding:0;
 }
 .content {
+	display:none;
 	position: absolute;
 	BOX-sizing: border-box;
 	text-align: center;
@@ -18,9 +19,13 @@ ol{
 	border-radius: 10px;
 	width: 320px;
 	height: 320px;
-	opacity: 0;
+	/* opacity: 0; */
 }
-
+.content.active{
+	display:block;
+	/* opacity: 1;
+	transition: 0.6s;*/
+}
 .toggle{
 	width:320px;
 	height: 320px;
@@ -493,10 +498,7 @@ td {
 	transition: 0.5s;
 }
 
-.content.active{
-	opacity: 1;
-	transition: 0.6s;
-}
+
 iframe{
 	border:15px solid rgb(8, 8, 8);
 	border-radius: 20px !important;
@@ -567,14 +569,16 @@ align-items:center;
 
 }
 .content{
-display:flex;
+display:none;
 align-items:center;
 justify-content: space-around;
 flex-direction: column;
 width: 157px;
 height: 168px;
 }
-
+.content.active{
+	display:flex;
+}
 iframe{
 
 	width:90%;
