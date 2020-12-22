@@ -43,7 +43,7 @@ $(document).ready(function () {
   });
 
   $(".toggle").click(function () {
-    $(this).css("display", "none");
+     $(this).css("display", "none");
     $(this)
       .parent()
       .children(".hide")
