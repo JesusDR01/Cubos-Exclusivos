@@ -51,9 +51,8 @@ $(document).ready(function() {
         
     })
     
-    $(".hide").click(function() {
-        this.classList.toggle("active");
-
+    $(".content, .hide").click(function() {
+        $(this).parent().children(".hide").toggleClass("active");
         $(this).parent().children(".content").toggleClass("active");
         $(this).parent().children(".toggle").css("display","flex");
         $(this).parent().children(".toggle").children(".flecha").fadeIn();

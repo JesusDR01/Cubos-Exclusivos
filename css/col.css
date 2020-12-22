@@ -33,9 +33,11 @@ ol{
 	display:flex;
 	justify-content: flex-end;
 	display:none;
+
 }
 .hide.active{
 	display:flex;
+	z-index:-1;
 }
 .content>p {
 	font-size: 25px;
