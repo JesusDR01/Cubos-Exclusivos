@@ -4,9 +4,11 @@ import t from '../locales/es';
 const Cube = ({ title, image }) => {
   const [showDetails, setShowDetails] = useState(false);
 
+  const toggleShowDetails = () => setShowDetails(!showDetails);
+  
   return (
     <div>
-      <div class="clickable" onClick={() => setShowDetails(!showDetails)}>
+      <div class="clickable" onClick={() => toggleShowDetails(!showDetails)}>
         {showDetails ? '⬅️' : '➡️'}
       </div>
       {showDetails && (
