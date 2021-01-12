@@ -648,7 +648,11 @@ top:59px
 .EstiloTexto{
 	font-size: 20px;
 }
+.background-holder {
 
+	background-position: 48%;
+  
+}
 
 }
 
