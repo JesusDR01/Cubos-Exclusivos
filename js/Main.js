@@ -1,62 +1,24 @@
-$(document).ready(function () {
-  const toTop = document.querySelector(".to-top");
-  var content = document.querySelector(".content");
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-  window.addEventListener("scroll", () => {
-    if (window.pageYOffset > 928) {
-      toTop.classList.add("active");
-    } else {
-      toTop.classList.remove("active");
-    }
-  });
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-  $("#toTop").click(function () {
-    $("html, body").animate(
-      {
-        scrollTop: 0,
-      },
-      500
-    );
-  });
+      // Store hash
+      var hash = this.hash;
 
-  $("#toggletable").click(function () {
-    $("table").fadeToggle("slow");
-  });
-
-  $("#showbutton").click(function () {
-    $("form").fadeIn();
-    $("#hidebutton").fadeIn();
-    $("#showbutton").fadeOut();
-    $(this).children("form").stop(true, true).fadeIn(300);
-  });
-
-  $(".minimize").click(function () {
-    $("form").fadeOut();
-    $("#hidebutton").fadeOut();
-    $("#showbutton").fadeIn();
-    $(this).children("form").stop(true, true).fadeIn(300);
-  });
-
-  $("form").submit(function (e) {
-    alert("Sugerencia enviada.");
-    e.preventDefault(e);
-  });
-
-  $(".toggle").click(function () {
-     $(this).css("display", "none");
-    $(this)
-      .parent()
-      .children(".hide")
-      .children(".flecha")
-      .css("font-size", "20px");
-    $(this).parent().children(".content").toggleClass("active");
-    $(this).parent().children(".hide").toggleClass("active");
-  });
-
-  $(".content, .hide").click(function () {
-    $(this).parent().children(".hide").toggleClass("active");
-    $(this).parent().children(".content").toggleClass("active");
-    $(this).parent().children(".toggle").css("display", "flex");
-    $(this).parent().children(".toggle").children(".flecha").fadeIn();
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1700, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
   });
 });
