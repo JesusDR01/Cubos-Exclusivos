@@ -151,21 +151,14 @@ a:link {
 	transition: 1s;
 }
 
-.content:hover>a {
-	animation-name: sliding;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
+.content a{
+	transform: translateY(0);
+	transition: all 0.5s ease-in-out;
 }
 
-@keyframes sliding {
-	from {
-		margin-top: 31%;
-		opacity: 0;
-	}
-	to {
-		margin-top: 0%;
-		opacity: 1;
-	}
+.content:hover>a {
+	opacity: 1;
+	transform: translateY(-35px);
 }
 
 .MainBox {
